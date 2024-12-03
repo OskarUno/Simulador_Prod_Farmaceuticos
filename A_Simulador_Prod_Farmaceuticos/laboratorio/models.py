@@ -4,6 +4,8 @@ from django.core.validators import MinValueValidator
 
 class Laboratorio(models.Model):
     nombre = models.CharField(max_length=50)
+    ciudad = models.CharField(max_length=100, null=True)
+    pais   = models.CharField(max_length=50, null=True)
     
     def __str__(self):
         return self.nombre
@@ -11,6 +13,7 @@ class Laboratorio(models.Model):
 class DirectorGeneral(models.Model):
     nombre = models.CharField(max_length=100)
     laboratorio = models.OneToOneField(Laboratorio, max_length=100, on_delete=models.CASCADE)
+    especialidad = models.CharField(max_length=200, null=True)
     
     def __str__(self):
         return f"{self.nombre} -- {self.laboratorio}"
