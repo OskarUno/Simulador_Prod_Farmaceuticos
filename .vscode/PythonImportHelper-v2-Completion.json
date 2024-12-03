@@ -49,6 +49,22 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -57,11 +73,37 @@
         "documentation": {}
     },
     {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
+        "label": "datetime",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.apps",
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -73,19 +115,36 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -138,7 +197,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'laboratorio'",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -147,7 +206,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'laboratorio'\n]\nMIDDLEWARE = [",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -165,7 +224,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "ROOT_URLCONF = 'A_Simulador_Prod_Farmaceuticos.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'A_Simulador_Prod_Farmaceuticos.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -174,7 +233,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -183,7 +242,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'A_Simulador_Prod_Farmaceuticos.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'A_Simulador_Prod_Farmaceuticos.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_final_orm',\n        'USER': 'userdjango', # Asegúrate de usar tu usuario de PostgreSQL\n        'PASSWORD': 'userdjango',\n        'HOST': 'localhost',",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -192,7 +251,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'db_final_orm',\n        'USER': 'userdjango', # Asegúrate de usar tu usuario de PostgreSQL\n        'PASSWORD': 'userdjango',\n        'HOST': 'localhost',\n        'PORT': '5432',\n    }\n}",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -210,7 +269,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'es-cl'\nTIME_ZONE = 'America/Santiago'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -219,7 +278,7 @@
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'America/Santiago'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.settings",
         "documentation": {}
     },
@@ -269,6 +328,15 @@
         "documentation": {}
     },
     {
+        "label": "index",
+        "kind": 2,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.views",
+        "description": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.views",
+        "peekOfCode": "def index(request):\n    return render(request, 'index.html')",
+        "detail": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "A_Simulador_Prod_Farmaceuticos.A_Simulador_Prod_Farmaceuticos.wsgi",
@@ -278,12 +346,75 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.migrations.0001_initial",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Laboratorio',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('nombre', models.CharField(max_length=50)),",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "LaboratorioAdmin",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "peekOfCode": "class LaboratorioAdmin(admin.ModelAdmin):\n    list_display = ('id','nombre',)     # Define las columnas visibles en la lista\n    search_fields = ('nombre',)         # Define los campos que se pueden buscar.\n    ordering = ('id',)                  # Define el orden de los registros.\nadmin.site.register(DirectorGeneral)\nclass DirectorGeneralAdmin(admin.ModelAdmin):\n    list_display = ('id','nombre', 'laboratorio')\n    search_fields = ('nombre',)\n    ordering = ('id',)\nadmin.site.register(Producto)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "documentation": {}
+    },
+    {
+        "label": "DirectorGeneralAdmin",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "peekOfCode": "class DirectorGeneralAdmin(admin.ModelAdmin):\n    list_display = ('id','nombre', 'laboratorio')\n    search_fields = ('nombre',)\n    ordering = ('id',)\nadmin.site.register(Producto)\nclass ProductoAdmin(admin.ModelAdmin):\n    list_display = ('id','nombre', 'laboratorio', 'f_fabricacion', 'p_costo', 'p_venta')\n    search_fields = ('nombre',)\n    ordering = ('id',)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ProductoAdmin",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "peekOfCode": "class ProductoAdmin(admin.ModelAdmin):\n    list_display = ('id','nombre', 'laboratorio', 'f_fabricacion', 'p_costo', 'p_venta')\n    search_fields = ('nombre',)\n    ordering = ('id',)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.admin",
+        "documentation": {}
+    },
+    {
         "label": "LaboratorioConfig",
         "kind": 6,
         "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.apps",
         "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.apps",
         "peekOfCode": "class LaboratorioConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'laboratorio'",
         "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Laboratorio",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "peekOfCode": "class Laboratorio(models.Model):\n    nombre = models.CharField(max_length=50)\n    def __str__(self):\n        return self.nombre\nclass DirectorGeneral(models.Model):\n    nombre = models.CharField(max_length=100)\n    laboratorio = models.OneToOneField(Laboratorio, max_length=100, on_delete=models.CASCADE)\n    def __str__(self):\n        return f\"{self.nombre} -- {self.laboratorio}\"\nclass Producto(models.Model):",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "documentation": {}
+    },
+    {
+        "label": "DirectorGeneral",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "peekOfCode": "class DirectorGeneral(models.Model):\n    nombre = models.CharField(max_length=100)\n    laboratorio = models.OneToOneField(Laboratorio, max_length=100, on_delete=models.CASCADE)\n    def __str__(self):\n        return f\"{self.nombre} -- {self.laboratorio}\"\nclass Producto(models.Model):\n    nombre = models.CharField(max_length=100)\n    laboratorio = models.ForeignKey(Laboratorio, on_delete=models.CASCADE)\n    f_fabricacion = models.DateField(validators=[MinValueValidator(datetime.date(2015,1,1))])\n    p_costo = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producto",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=100)\n    laboratorio = models.ForeignKey(Laboratorio, on_delete=models.CASCADE)\n    f_fabricacion = models.DateField(validators=[MinValueValidator(datetime.date(2015,1,1))])\n    p_costo = models.DecimalField(max_digits=10, decimal_places=2)\n    p_venta = models.DecimalField(max_digits=10, decimal_places=2)\n    def save(self, *args, **kwargs):\n        # Validar los campos de la tabla antes de Guardar\n        self.full_clean()\n        super().save(*args,**kwargs)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
         "documentation": {}
     },
     {
