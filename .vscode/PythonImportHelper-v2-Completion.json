@@ -65,6 +65,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -596,6 +604,33 @@
         "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
         "peekOfCode": "class Producto(models.Model):\n    nombre = models.CharField(max_length=100)\n    laboratorio = models.ForeignKey(Laboratorio, on_delete=models.CASCADE)\n    f_fabricacion = models.DateField(validators=[MinValueValidator(datetime.date(2015,1,1))])\n    p_costo = models.DecimalField(max_digits=10, decimal_places=2)\n    p_venta = models.DecimalField(max_digits=10, decimal_places=2)\n    def save(self, *args, **kwargs):\n        # Validar los campos de la tabla antes de Guardar\n        self.full_clean()\n        super().save(*args,**kwargs)",
         "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.models",
+        "documentation": {}
+    },
+    {
+        "label": "LaboratorioModelTest",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "peekOfCode": "class LaboratorioModelTest(TestCase):\n    @classmethod\n    def setUpTestData(cls):\n        Laboratorio.objects.create(nombre='Laboratorio A', ciudad='Santiago', pais='Chile')\n    def test_nombre_laboratorio(self):\n        laboratorio = Laboratorio.objects.get(id=1)\n        self.assertEqual(laboratorio.nombre, 'Laboratorio A')\n    def test_ciudad_laboratorio(self):\n        laboratorio = Laboratorio.objects.get(id=1)\n        self.assertEqual(laboratorio.ciudad, 'Santiago')",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "documentation": {}
+    },
+    {
+        "label": "LaboratorioURLTest",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "peekOfCode": "class LaboratorioURLTest(TestCase):\n    @classmethod\n    def setUpTestData(cls):\n        Laboratorio.objects.create(nombre='Laboratorio B', ciudad='Valparaíso', pais='Chile')\n    def test_url_accesible_por_nombre(self):\n        response = self.client.get(reverse('laboratorio:editar', args=[2]))\n        self.assertEqual(response.status_code, 200)\n    def test_url_existe_en_ubicacion_deseada(self):\n        response = self.client.get('/laboratorio/editar/2/')\n        self.assertEqual(response.status_code, 200)",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "documentation": {}
+    },
+    {
+        "label": "LaboratorioVistaTest",
+        "kind": 6,
+        "importPath": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "description": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
+        "peekOfCode": "class LaboratorioVistaTest(TestCase):\n    @classmethod\n    def setUpTestData(cls):\n        Laboratorio.objects.create(nombre='Laboratorio C', ciudad='Concepción', pais='Chile')\n    def test_vista_usa_plantilla_correcta(self):\n        response = self.client.get(reverse('laboratorio:editar', args=[3]))\n        self.assertEqual(response.status_code, 200)\n        self.assertTemplateUsed(response, 'laboratorio/crear_laboratorio.html')\n    def test_vista_contiene_html_correcto(self):\n        response = self.client.get(reverse('laboratorio:editar', args=[3]))",
+        "detail": "A_Simulador_Prod_Farmaceuticos.laboratorio.tests",
         "documentation": {}
     },
     {
