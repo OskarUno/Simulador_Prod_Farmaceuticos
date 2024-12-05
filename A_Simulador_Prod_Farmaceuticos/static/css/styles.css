@@ -1,0 +1,81 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #161414;
+    color: rgb(147, 168, 194);
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5 rem;
+}
+
+nav {
+    background-color: rgb(127, 148, 172);
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/*
+nav a:hover {
+    color: orangered;
+}
+
+*/
+
+.container {
+    width: 80%;
+    margin-top: 0 auto;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    
+    vertical-align: middle;
+   
+
+}
+
+
+
+th, td {
+    padding: 10px;
+    text-align: center;
+
+    width: 25%;
+
+    vertical-align: top;
+    border: 1px solid #000000;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: #234bb7;
+    color: #cec9c9;
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotron p.lead{
+        font-size: 1.5rem;
+        color: blueviolet;
+    }
+}

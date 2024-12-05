@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} VER LABORATORIOS {% endblock %}
+{% block content %}
+
+<div class="container">
+    
+    <div class="container">
+        {% if error %}
+            <div class="alert alert-danger"> {{error}}</div>
+        {% endif %}
+
+        {% if laboratorios %}
+        <h2>Informacion de Laboratorios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for lab in laboratorios %}
+                        <tr>
+                            <td>{{ lab.nombre }}</td>
+                            <td>{{ lab.ciudad }}</td>
+                            <td>{{ lab.pais }}</td>
+                            <td><a href="{% url 'laboratorio:editar' lab.id %} ">Modificar</a></td>
+                            <td><a href="{% url 'laboratorio:eliminar' lab.id %}">Eliminar</a></td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <p>No hay nada que mostrar en este momento .................</p>    
+            {% endif %}
+            </tbody>
+        </table>
+
+        <br><br>
+        <p> ¿ Informacion de Laboratorios ?</p>
+        <a  href="{% url 'index' %}"><-- Ir A la pagina de Inicio</a>
+        <br><br>
+        <p> Usted ha visitado esta pagina  {{ visitas }} veces</p>
+    </div>
+
+{% endblock %}

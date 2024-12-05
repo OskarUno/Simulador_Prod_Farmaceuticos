@@ -1,0 +1,22 @@
+{% extends 'base.html' %} 
+{% block title %} CREAR LABORATORIO {% endblock %} 
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+  <h2>
+    {% if for.instance.pk %} Actualizar 
+    {% else %} Ingresar los Datos del 
+    {% endif %} Laboratorio
+  </h2>
+
+  <form method="post">
+    <!-- csrf_token se utiliza para evitar ataques cruzados  -->
+    {% csrf_token %}
+    <!-- as_p Metodo para renderizar el formulario as=como p=parrafo -->
+    {{ form|crispy }}
+    <button type="submit" class="btn bg-success">Enviar</button>
+  </form>
+</div>
+
+
+{% endblock %}
